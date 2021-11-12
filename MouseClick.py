@@ -1,10 +1,6 @@
-##############################################################
-#
-#               Python OSX MouseClick
-#
-#       (c) 2010 Alex Assouline, GeekOrgy.com
-#
-##############################################################
+
+##Mouseclicker
+
 import sys
 try:
         xclick=int(sys.argv[1])
@@ -18,9 +14,6 @@ except:
         exit()
 
 print "mouse click at ", xclick, ",", yclick," in ", delay, "seconds"
-
-# you only want to import the following after passing the parameters check above, because ‘importing’ takes time, about 1.5s
-# (why so long!, these libs must be huge : anyone have a fix for this ?? please let me know.)
 
 import time
 from Quartz.CoreGraphics import CGEventCreateMouseEvent
